@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" href="img/logo/logokecik.png" type="image/png">
+        <title>Danial Hakim</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="vendors/linericon/style.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
+        <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+        <link rel="stylesheet" href="vendors/animate-css/animate.css">
+        <link rel="stylesheet" href="vendors/flaticon/flaticon.css">
+        <!-- main css -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+    </head>
+    <body>
+        
+        <!--================Header Menu Area =================-->
+        <header class="header_area">
+            <div class="main_menu" id="mainNav">
+            	<nav class="navbar navbar-expand-lg navbar-light">
+					<div class="container box_1620">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<a class="navbar-brand logo_h" href="index.html"><img src="img/logo/HAKIMZ_LOGO-removebg-preview.png" alt="" width="150"></a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+							<ul class="nav navbar-nav menu_nav ml-auto">
+								<li class="nav-item active"><a class="nav-link" href="index.html">HOME</a></li> 
+								<li class="nav-item"><a class="nav-link" href="about-us.html">ABOUT ME</a></li> 
+								<li class="nav-item"><a class="nav-link" href="my_interest.html">MY INTEREST&nbsp;</a></li>
+									
+								<li class="nav-item"><a class="nav-link" href="professional_interest.html">PROFESSIONAL INTEREST&nbsp;</a></li>
+								<li class="nav-item"><a class="nav-link" href="portfolio.html">PORTFOLIO&nbsp;</a></li>
+								<li class="nav-item"><a class="nav-link" href="contact.html">CONTACT&nbsp;</a></li>
+									
+							</ul>
+						</div> 
+					</div>
+            	</nav>
+            </div>
+        </header>
+        <!--================Header Menu Area =================-->
+        
+        <!--================Home Banner Area =================-->
+        <section class="home_banner_area" id="section1">
+    <div class="video-background">
+        <video autoplay muted loop playsinline>
+            <source src="img/logo/vid1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="banner_inner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-xl-12">
+                    <div class="banner_content">
+                        <blockquote>
+                            <h3 class="text-center">WELCOME TO MY WEBSITE</h3>
+                            <h2 class="text-center">DANIAL HAKIM</h2>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <!--================End Home Banner Area =================-->
+        
+        <!--================Welcome Area =================-->
+<section class="welcome_area p_120" style="background: #ffffff; padding: 50px 0;">
+    <div class="container">
+        <div class="row welcome_inner">
+            <!-- Left Column: Welcome Text -->
+            <div class="col-lg-6">
+                <div class="welcome_text" style="text-align: center;">
+                    <h4 class="welcome-title">HELLO!&nbsp;👋</h4>
+                  <p class="welcome-description">
+                        I am excited to welcome you to my website. Here, you will find information about me, my experiences, and my skills. Feel free to explore and get to know me better.
+                    </p>
+                    <a class="banner_btn" href="about-us.html">
+                  KNOW MORE ABOUT ME&nbsp; </a>
+                </div>
+            </div>
+
+            <!-- Right Column: Image Carousel -->
+            <div class="col-lg-6 col-xl-5 offset-xl-1">
+                <div class="carousel-container" style="position: relative; display: flex; justify-content: center;">
+                    <!-- Carousel Images -->
+                    <img id="carousel-image" src="img/logo/nya2.jpg" 
+                         alt="Profile Image 1" class="img-fluid rounded-circle" 
+                         style="max-width: 100%; height: auto; transition: opacity 0.5s ease;">
+
+                    <!-- Left & Right Buttons -->
+                  <button onclick="changeImage(-1)" class="carousel-btn left-btn">&#10094;</button>
+                    <button onclick="changeImage(1)" class="carousel-btn right-btn">&#10095;</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    // JavaScript for Image Carousel
+    const images = [
+        "img/logo/nya2.jpg",
+        "img/logo/nya1.jpg",
+        "img/logo/nya3.jpg"
+    ];
+    let currentIndex = 0;
+    
+    function changeImage(direction) {
+        currentIndex = (currentIndex + direction + images.length) % images.length;
+        document.getElementById("carousel-image").src = images[currentIndex];
+    }
+</script>
+
+<style>
+    /* Carousel Button Styles */
+    .carousel-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 24px;
+        border-radius: 50%;
+    }
+    
+    .left-btn { left: 10px; }
+    .right-btn { right: 10px; }
+    
+    .carousel-btn:hover {
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .welcome_area {
+        padding: 100px 0;
+        transition: all 0.5s ease-in-out;
+        background: #ffffff;
+    }
+
+    .welcome-title {
+        font-size: 2.5rem;
+        color: #333;
+        animation: fadeInUp 1s ease-out;
+        letter-spacing: 2px;
+        font-weight: bold;
+    }
+
+    .welcome-description {
+        font-size: 1.2rem;
+        color: #555;
+        line-height: 1.8;
+        animation: fadeInUp 1.5s ease-out;
+        margin-top: 20px;
+        font-weight: 400;
+        transition: color 0.4s ease-in-out;
+    }
+
+    .banner_btn {
+        display: inline-block;
+        margin-top: 30px;
+        padding: 12px 25px;
+        background-color: #5a67d8;
+        color: #fff;
+        border-radius: 30px;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 1px;
+        text-decoration: none;
+        transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .banner_btn:hover {
+        background-color: #7f85ff;
+        transform: scale(1.1);
+        box-shadow: 0px 15px 30px rgba(90, 103, 216, 0.4);
+    }
+
+    .img-fluid {
+        width: 100%;
+        max-width: 350px;
+        border: 5px solid #5a67d8;
+        box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .img-fluid:hover {
+        transform: scale(1.1);
+        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Scroll-to-top animation */
+    #scrollTopBtn {
+        animation: slideIn 0.5s ease-in-out;
+    }
+
+    @keyframes slideIn {
+        from {
+            transform: translateY(50px);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+</style>
+
+<script>
+    document.getElementById('scrollTopBtn').addEventListener('click', function(event) {
+        event.preventDefault();  // Prevent default anchor behavior
+        document.querySelector('#section1').scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    });
+</script>
+
+        <!--================End Welcome Area =================-->
+        
+        <!--================Feature Area =================-->
+        
+        <!--================End Feature Area =================-->
+        
+        <!--================Projects Area =================-->
+        
+        <!--================End Projects Area =================-->
+        
+        <!--================Testimonials Area =================-->
+        
+        <!--================End Testimonials Area =================-->
+        
+        <!--================Latest Blog Area =================-->
+        
+        <!--================End Latest Blog Area =================-->
+        
+        <!--================Footer Area =================-->
+        <footer class="footer_area p_120">
+    <div class="container">
+        <div class="row footer_inner">
+            <div class="col-lg-5 col-sm-6">
+                <aside class="f_widget ab_widget">
+                    <div class="f_title">
+                        <h3>About Me</h3>
+                    </div>
+                    <p>Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills,</p>
+                    <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> 2024 All rights reserved | DANIAL HAKIM 22B10I010 <a href="https://colorlib.com" target="_blank"></a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </p>
+                </aside>
+            </div>
+            <div class="col-lg-5 col-sm-6">
+                <aside class="f_widget news_widget">
+                    <div class="f_title">
+                        <h3>Newsletter</h3>
+                    </div>
+                    <p>Stay updated with our latest trends</p>
+                    <div id="mc_embed_signup">
+                        <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscribe_form relative">
+                            <div class="input-group d-flex flex-row">
+                                <input name="EMAIL" placeholder="Enter email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address '" required="" type="email">
+                                <button class="btn sub-btn"><span class="lnr lnr-arrow-right"></span></button>		
+                            </div>				
+                            <div class="mt-10 info"></div>
+                        </form>
+                    </div>
+                </aside>
+            </div>
+            <div class="col-lg-2">
+                <aside class="f_widget social_widget">
+                    <div class="f_title">
+                        <h3>Follow Me</h3>
+                    </div>
+                    <p>Let us be social</p>
+                    <ul class="list">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                        <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                    </ul>
+                </aside>
+            </div>
+        </div>
+        <!-- Scroll Up Button -->
+        <button onclick="scrollToTop()" class="scroll-up-btn">
+            <i class="fa fa-arrow-up"></i>
+        </button>
+    </div>
+</footer>
+
+<script>
+    // JavaScript function to scroll to top
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+</script>
+
+<style>
+    /* Scroll Up Button Style */
+    .scroll-up-btn {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #5a67d8;
+        color: white;
+        border: none;
+        padding: 12px 15px;
+        font-size: 20px;
+        border-radius: 50%;
+        cursor: pointer;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .scroll-up-btn:hover {
+        transform: scale(1.1);
+        box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+        background-color: #7f85ff;
+    }
+</style>
+
+        <!--================End Footer Area =================-->
+        
+        
+        
+        
+        
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/popper.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/stellar.js"></script>
+        <script src="vendors/lightbox/simpleLightbox.min.js"></script>
+        <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+        <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+        <script src="vendors/isotope/isotope-min.js"></script>
+        <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+        <script src="js/jquery.ajaxchimp.min.js"></script>
+        <script src="vendors/counter-up/jquery.waypoints.min.js"></script>
+        <script src="vendors/counter-up/jquery.counterup.min.js"></script>
+        <script src="js/mail-script.js"></script>
+        <!--gmaps Js-->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+        <script src="js/gmaps.min.js"></script>
+        <script src="js/theme.js"></script>
+    </body>
+</html>
